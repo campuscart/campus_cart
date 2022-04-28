@@ -1,0 +1,44 @@
+.Sell-component-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.Sell-component-container div {
+	text-align: left;
+}
+
+.b-1 {
+	min-width: 5%;
+	max-width: 5%;
+}
+
+.b-2 {
+	min-width: 15%;
+}
+
+.b-3 {
+	width: 35%;
+}
+
+.b-4 {
+	width: 20%;
+}
+
+.b-5 {
+	width: 10%;
+}
+
+.b-6 {
+	width: 20%;
+}
+
+.b-7{
+	width: 5%;
+}
+
+.b-7:hover{
+	cursor: pointer;
+}

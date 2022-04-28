@@ -1,0 +1,98 @@
+.admin-panel-container {
+	height: 80vh;
+	width: 95vw;
+	background-color: #2e363d;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 40px 0px 0px 10px;
+	gap: 20px;
+	box-shadow: 10px 10px 10px #201e1e;
+}
+
+.admin-panel-top {
+	width: 90vw;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.admin-panel-bottom {
+	display: flex;
+	width: 95vw;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.admin-panel-header {
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin-left: -100px;
+}
+
+.admin-panel-content {
+	display: flex;
+	gap: 50px;
+	height: 350px;
+}
+
+.admin-panel-nav-btns {
+	width: 60%;
+	background-color: #abebc6;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.admin-panel-option-btn {
+	height: 50px;
+	font-size: 20px;
+	color: black;
+	width: 20%;
+	background-color: #abebc6;
+	border: 0px;
+}
+.admin-panel-option-btn:focus {
+	outline: none;
+}
+.admin-panel-active-option-btn {
+	border-style: solid;
+	border-bottom-style: groove;
+	border-bottom-color: black;
+	border-bottom-width: 3px;
+}
+
+.admin-panel-search {
+	width: 500px;
+	font-weight: bolder;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+.admin-panel-content-options {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.admin-panel-footer {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.admin-panel-footer-btn {
+	padding: 10px;
+}
+
+.admin-panel-footer-btn:hover {
+	cursor: pointer;
+	background-color: rgb(92, 89, 89);
+}
+
+.admin-input {
+	font-size: larger;
+}
