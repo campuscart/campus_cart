@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap);
+
+.cont {
+	background: #ffd1aa;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.form-container {
+	width: 57vw;
+	background-color: white;
+	margin: auto;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	padding: 10px;
+}
+
+.radio {
+	display: flex;
+	width: 50%;
+	margin-left: 5%;
+	margin-top: 2%;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.radio_b {
+	font-size: 1.5rem;
+	margin-top: 2.5%;
+	margin-left: 7%;
+	margin-right: 2%;
+}
+.register-form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.titl {
+	background: #0a8662;
+	width: 40%;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	font-size: 1.4rem;
+	padding: 1rem;
+	font-family: 'Manjari';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	color: #ffffff;
+	margin-left: 10%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-align: center;
+}
+
+.success-message {
+	font-family: 'Roboto', sans-serif;
+	background-color: #3f89f8;
+	padding: 5px;
+	color: white;
+}
+
+.form-field {
+	padding: 1rem;
+	font-size: 16px;
+	border: 0;
+	margin-left: 3%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.boxs {
+	background: rgba(196, 196, 196, 0.3);
+	border-radius: 50px;
+	width: 50%;
+	height: 5%;
+	font-size: 1rem;
+	transform: scale(0.8);
+	margin-left: 0%;
+}
+.labl {
+	font-family: 'Manjari';
+	font-style: normal;
+	font-weight: bolder;
+	letter-spacing: 0.1rem;
+	font-size: 1.2em;
+	line-height: 0.5rem;
+	margin-top: 1%;
+}
+#img_b {
+	width: 10%;
+	font-size: 0.8rem;
+	padding: 0.3rem;
+	margin-left: 5%;
+	background: #3669cc;
+	color: #ffffff;
+}
+
+.blocky {
+	position: absolute;
+	top: 10%;
+	left: 63%;
+	transform: scale(0.9);
+}
+.next {
+	font-family: 'Manjari';
+	font-style: normal;
+	font-weight: bolder;
+	letter-spacing: 0.1rem;
+	font-size: 1rem;
+	line-height: 27px;
+	background: #ff7330;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	width: 14%;
+	padding: 0.5rem;
+	padding-top: 0.75rem;
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-bottom: 5%;
+
+	color: #ffffff;
+}
+span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: red;
+	margin-bottom: 15px;
+}
+
+input label {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+.error {
+	border-style: solid;
+	border: 2px solid #ffa4a4;
+}
+/* 
+button {
+  background: #40c3dd;
+  color: white;
+  cursor: pointer;
+} */
+
+button:disabled {
+	cursor: default;
+}
+#hostel {
+	margin-top: -5%;
+	font-family: 'Roboto', sans-serif;
+}
+.brs {
+	margin-top: -5%;
+	margin-left: 10%;
+	font-family: 'Roboto', sans-serif;
+}
+#lbuy {
+	margin-top: -3%;
+	font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+	.blocky {
+		display: none;
+	}
+	.form-container {
+		width: 80%;
+	}
+	.labl {
+		font-size: 1rem;
+	}
+	.titl {
+		font-size: 1rem;
+		width: 90%;
+		padding: 0.1rem;
+		margin-left: 5%;
+	}
+	.radio_b {
+		font-size: 1rem;
+		margin-top: 6%;
+	}
+	.radio {
+		font-size: 1.2rem;
+	}
+	#img_b {
+		width: 35%;
+	}
+	.next {
+		width: 40%;
+	}
+}
