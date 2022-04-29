@@ -1,0 +1,90 @@
+.welcome-section {
+	width: 100%;
+	height: 800px;
+	font-size: 16px;
+	background-image: url(../../img/iiita.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	/* filter: brightness(67%) contrast(104%) saturate(83%) blur(0px)
+		hue-rotate(0deg); */
+}
+
+.welcome-text {
+	filter: none;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+#adv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 20%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	color: #ffff;
+}
+#adv h4 {
+	padding-top: 0.1rem;
+	font-size: 14px;
+}
+
+.quote {
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	/* line-height: 67px; */
+	color: #ffff;
+}
+
+hr {
+	position: relative;
+	left: 0%;
+	border: none;
+	border-bottom: 5px solid #2575fc;
+	color: #2575fc;
+	height: 20px;
+	width: 20%;
+	margin-bottom: 5px;
+}
+
+.purchase-button {
+	/* justify-content: center; */
+	width: fit-content;
+	/* margin-right:10rem; */
+	padding-bottom: 10rem;
+	/* margin-left: 3.9rem; */
+	/* border:none; */
+	color: #ffff;
+	padding: 20px 50px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	border-radius: 50px;
+	border: 1px solid #ffff;
+	background: border-box;
+	position: absolute;
+	bottom: 10%;
+	margin: auto;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.purchase-button {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	/* line-height: 67px; */
+}
+.hover-button {
+	color: #2575fc;
+	background-color: #ffff;
+}

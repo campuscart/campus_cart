@@ -1,0 +1,111 @@
+.faq-section {
+	position: relative;
+	text-align: center;
+	/* justify-content: center; */
+	margin-top: 15rem;
+	margin-bottom: 15rem;
+	font-family: 'Roboto', sans-serif;
+}
+.faq-section h1 {
+	font-weight: 600;
+	font-size: 45px;
+	/* color:#0000;  */
+}
+.faq-section p {
+	font-weight: 300;
+	font-size: 15px;
+	color: #bfbfbf;
+}
+.tab input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.tabs {
+	margin-top: 5rem;
+	display: grid;
+	grid-template-columns: 42rem 1fr 42rem;
+}
+.tab {
+	/* width: 90%;
+    width: */
+	grid-column: 2/3;
+	color: black;
+	overflow: hidden;
+	/* position:absolute; */
+	/* margin:auto; */
+	/* left:50%;
+    transform:translate(-50%,0%); */
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+		rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	margin-bottom: 30px;
+}
+.tab-label {
+	display: flex;
+	justify-content: space-between;
+	background: #ffff;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 30px 20px;
+	/* border-radius:20px; */
+}
+
+.tab-label {
+	font-weight: 600;
+	font-size: 16px;
+	color: #000000;
+}
+
+.tab-label::after {
+	content: '\276F';
+	width: 1em;
+	height: 1em;
+	text-align: left;
+	transition: all 0.35s;
+}
+.tab-content {
+	max-height: 0;
+	padding: 0 1em;
+	color: #2c3e50;
+	background: white;
+	transition: all 0.35s;
+	text-align: left;
+	font-weight: 300;
+	font-size: 16px;
+	color: #bfbfbf;
+}
+/* @media () */
+@media (max-width: 1300px) {
+	.tabs {
+		margin-top: 5rem;
+		display: grid;
+		grid-template-columns: 20rem 1fr 20rem;
+	}
+}
+@media (max-width: 998px) {
+	.tabs {
+		margin-top: 5rem;
+		display: grid;
+		grid-template-columns: 10rem 1fr 10rem;
+	}
+}
+@media (max-width: 520px) {
+	.tabs {
+		margin-top: 5rem;
+		display: grid;
+		grid-template-columns: 2rem 1fr 2rem;
+	}
+}
+
+.tab input:checked + .tab-label {
+	color: #e04b4a;
+}
+
+.tab input:checked + .tab-label::after {
+	transform: rotate(-90deg);
+	color: #00cf1a;
+}
+.tab input:checked ~ .tab-content {
+	max-height: 100vh;
+	padding: 1em;
+}

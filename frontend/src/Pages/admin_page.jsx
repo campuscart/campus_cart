@@ -1,7 +1,6 @@
 import React from 'react';
 import AdminPanel from '../Component/AdminPanel/AdminPanel';
-import NavBar from './nav';
-
+import Navbar from '../Component/HomePage/Navbar/Navbar';
 function AdminPage() {
 	return (
 		<div style={{ textAlign: 'center' }}>
@@ -17,7 +16,7 @@ function AdminPage() {
 					color: 'white'
 				}}
 			>
-				<NavBar />
+				<Navbar />
 				<AdminPanel />
 			</div>
 		</div>

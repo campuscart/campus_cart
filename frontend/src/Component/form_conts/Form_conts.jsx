@@ -32,7 +32,14 @@ export default function Form_conts() {
 				Authorization: `Bearer ${userInfo.access}`
 			}
 		};
-		axios.post(`http://127.0.0.1:8000/api/sell/create`, userInput, config);
+		axios
+			.post(`http://127.0.0.1:8000/api/sell/create`, userInput, config)
+			.then((res) => (window.location.href = '/success'))
+			.catch((err) => {
+				alert(
+					'Some error occured. Please fill all the fields correctly'
+				);
+			});
 	};
 
 	return (

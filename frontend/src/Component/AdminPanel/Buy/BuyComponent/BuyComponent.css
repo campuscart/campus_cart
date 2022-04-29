@@ -3,7 +3,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 
 .buy-component-container div {
@@ -35,10 +34,14 @@
 	width: 20%;
 }
 
-.b-7{
+.b-7 {
 	width: 5%;
 }
 
-.b-7:hover{
+.b-7:hover {
 	cursor: pointer;
+}
+
+.b-6 a {
+	color: rgb(49, 197, 179);
 }

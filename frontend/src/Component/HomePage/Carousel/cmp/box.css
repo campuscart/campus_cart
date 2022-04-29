@@ -1,0 +1,53 @@
+.box_cont {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #fff;
+	border: none;
+}
+.desc_cont {
+	background: linear-gradient(-35deg, #f2709c 0%, #fe8f75 100%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+	border: none;
+	height: 20rem;
+}
+
+.desc {
+	width: 80%;
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: white;
+}
+.info_cont {
+	margin-top: 7%;
+	margin-bottom: 2%;
+}
+.name {
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.year {
+	margin-top: 4%;
+	font-family: sans-serif;
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.stars {
+	margin-top: 6%;
+	margin-bottom: 6%;
+	color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	width: 30%;
+}
+.icon {
+	margin-top: 5%;
+}

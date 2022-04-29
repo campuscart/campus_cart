@@ -24,7 +24,7 @@ function AdminPanel() {
 
 		// if user info exist then make a get request with auth token
 		if (!userInfo) {
-			window.SharedArrayBuffer.location = 'https://www.google.com';
+			window.location.href = '/login';
 		}
 		const config = {
 			headers: {
@@ -72,7 +72,7 @@ function AdminPanel() {
 
 		// if user info exist then make a get request with auth token
 		if (!userInfo) {
-			window.SharedArrayBuffer.location = 'https://www.google.com';
+			window.location.href = '/login';
 		}
 		const config = {
 			headers: {
@@ -98,7 +98,7 @@ function AdminPanel() {
 
 		// if user info exist then make a get request with auth token
 		if (!userInfo) {
-			window.SharedArrayBuffer.location = 'https://www.google.com';
+			window.location.href = '/login';
 		}
 		const config = {
 			headers: {
@@ -111,6 +111,9 @@ function AdminPanel() {
 			.then((res) => {
 				setSell(res.data);
 				setData(res.data);
+			})
+			.catch((e) => {
+				window.location.href = '/login';
 			});
 	};
 
@@ -143,7 +146,7 @@ function AdminPanel() {
 								setInput(e.target.value);
 							}}
 							placeholder="Search"
-							className='admin-input'
+							className="admin-input"
 						/>
 					</div>
 				</div>

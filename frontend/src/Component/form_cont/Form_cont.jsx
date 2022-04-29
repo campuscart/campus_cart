@@ -36,6 +36,12 @@ export default function Form_cont() {
 		};
 		axios
 			.post(`http://127.0.0.1:8000/api/buy/create`, userInput, config)
+			.then((res) => (window.location.href = '/success'))
+			.catch((err) => {
+				alert(
+					'Some error occured. Please fill all the fields correctly'
+				);
+			});
 	};
 
 	return (
@@ -64,13 +70,7 @@ export default function Form_cont() {
 					<label className="form-field labl">
 						Image of Transaction:
 					</label>
-					<button
-						classname="form-field img_buy"
-						id="img_b"
-						type="submit"
-					>
-						Add Image
-					</button>
+					<input type="file" />
 					<label className="form-field labl">Phone No.:</label>
 					<input
 						id="Room no."
@@ -143,4 +143,3 @@ export default function Form_cont() {
 		</div>
 	);
 }
-

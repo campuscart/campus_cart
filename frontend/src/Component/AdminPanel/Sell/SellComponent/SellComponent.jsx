@@ -33,10 +33,16 @@ function SellComponent({
 		});
 	}, []);
 
-	useEffect(() => {
+	// useEffect(() => {
+	// 	const userData = { order_closed: closed };
+	// 	updateData(id, userData);
+	// }, [closed]);
+
+	const handleCheck = () => {
+		setClosed(!closed);
 		const userData = { order_closed: closed };
 		updateData(id, userData);
-	}, [closed]);
+	};
 
 	const updateOrder = () => {
 		updateData(id, changeable);
@@ -58,7 +64,7 @@ function SellComponent({
 					<input
 						type="checkbox"
 						defaultChecked={order_closed}
-						onChange={() => setClosed(!closed)}
+						onChange={handleCheck}
 					/>
 				</div>
 				<div className="b-2">{convertToHumanReadable(date)}</div>
