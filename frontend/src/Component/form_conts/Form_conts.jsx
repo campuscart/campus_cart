@@ -66,7 +66,7 @@ export default function Form_conts() {
 						id="Roll No."
 						className="form-field_sell boxs_sell"
 						type="text"
-						placeholder="Roll no."
+						placeholder="Enrollment no."
 						name="enrollment_number"
 						onChange={handleChange}
 					/>
@@ -87,7 +87,7 @@ export default function Form_conts() {
 						id="Room no."
 						className="form-field_sell boxs_sell"
 						type="text"
-						placeholder="Room no."
+						placeholder="Phone no."
 						name="phone_number"
 						onChange={handleChange}
 					/>

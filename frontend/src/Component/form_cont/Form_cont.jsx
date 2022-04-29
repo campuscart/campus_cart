@@ -63,20 +63,20 @@ export default function Form_cont() {
 						id="Roll No."
 						className="form-field boxs"
 						type="text"
-						placeholder="Roll no."
+						placeholder="Enrollment no."
 						name="enrollment_number"
 						onChange={(e) => handleChange(e)}
 					/>
 					<label className="form-field labl">
 						Image of Transaction:
 					</label>
-					<input type="file" />
+					<input type="file" id="img_b" />
 					<label className="form-field labl">Phone No.:</label>
 					<input
 						id="Room no."
 						className="form-field boxs"
 						type="text"
-						placeholder="Room no."
+						placeholder="Phone no."
 						name="phone_number"
 						onChange={(e) => handleChange(e)}
 					/>
@@ -85,7 +85,7 @@ export default function Form_cont() {
 						id="Hostel no."
 						className="form-field boxs"
 						type="text"
-						placeholder="Hostel no."
+						placeholder="Hostel"
 						name="hostel"
 						onChange={(e) => handleChange(e)}
 					/>

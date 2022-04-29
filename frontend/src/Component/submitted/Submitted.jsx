@@ -13,7 +13,7 @@ export default function Submitted() {
 			</div>
 			
 				<button className="form-field_submit home_submit">
-					<Link to={'/'}>Go to Home </Link>
+					<Link to={'/'} className='home_submit_text'>Go to Home </Link>
 				</button>
 		</div>
 	);
